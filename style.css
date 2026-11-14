@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f8f7;
+    color: #263b3b;
+    line-height: 1.6;
+}
+
+header {
+    background: #064e3b;
+    color: white;
+    text-align: center;
+    padding: 35px 15px;
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+nav {
+    background: #087f5b;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffe082;
+}
+
+.hero {
+    min-height: 420px;
+    background: linear-gradient(
+        rgba(0, 50, 40, 0.65),
+        rgba(0, 50, 40, 0.65)
+    ), url("https://images.unsplash.com/photo-1518837695005-2083093ee35b");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 130px 20px;
+}
+
+.hero h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    background: #f9c74f;
+    color: #064e3b;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+section:not(.hero) {
+    padding: 55px 10%;
+    text-align: center;
+}
+
+section h2 {
+    color: #087f5b;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+section p {
+    font-size: 17px;
+    max-width: 850px;
+    margin: auto;
+}
+
+footer {
+    background: #064e3b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 26px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+        font-size: 14px;
+    }
+
+    .hero h2 {
+        font-size: 28px;
+    }
+
+    section:not(.hero) {
+        padding: 40px 6%;
+    }
+}
+.features {
+    padding: 60px 8%;
+    text-align: center;
+    background: #e4f4ef;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-top: 35px;
+}
+
+.card {
+    background: white;
+    width: 280px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(0,0,0,0.12);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-icon {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    color: #087f5b;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 15px;
+}
+/* Fix Aquaculture Images */
+
+.card {
+    width: 280px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.project-section {
+    background: white;
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.project-section h2 {
+    color: #087f5b;
+    margin-bottom: 20px;
+}
+
+.project-section h3 {
+    color: #087f5b;
+    margin: 25px 0 12px;
+}
+
+.project-section p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.project-section ul {
+    display: inline-block;
+    text-align: left;
+    line-height: 2;
+}
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Navigation hover effect */
+nav a {
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+/* Card hover effect */
+.card {
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+/* Contact Section Design */
+#contact {
+    background: #e8f5f1;
+    text-align: center;
+    padding: 50px 10%;
+}
+
+#contact h2 {
+    color: #087f5b;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
