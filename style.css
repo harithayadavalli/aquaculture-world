@@ -266,3 +266,35 @@ nav a:hover {
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
 }
+.team-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 30px auto;
+}
+
+.team-member {
+    background: white;
+    padding: 20px;
+    width: 190px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.team-member h3 {
+    margin-top: 12px;
+    color: #176b45;
+}
+
+.team-member p {
+    color: #555;
+}
