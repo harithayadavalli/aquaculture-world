@@ -298,3 +298,33 @@ nav a:hover {
 .team-member p {
     color: #555;
 }
+/* Team Photos Fix */
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin: 30px auto;
+}
+
+.team-member {
+    background: white;
+    padding: 20px;
+    width: 190px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.team-member img {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+}
